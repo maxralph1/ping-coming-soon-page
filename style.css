@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+
+*, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+:root {
+ --blue: hsl(223, 87%, 63%);
+ --pale-blue: hsl(223, 100%, 88%);
+ --light-red: hsl(354, 100%, 66%);
+ --white: hsla(0, 0%, 100%, 0.897);
+ --gray: hsl(0, 0%, 59%);
+ --dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+ font-family: 'Libre Franklin', sans-serif;
+ text-align: center;
+ margin: 2.5rem auto;
+}
+
+.header .img {
+ width: 3rem;
+ margin-bottom: 1rem;
+}
+
+.main {
+ line-height: 2.2;
+}
+
+.main__heading {
+ font-size: 1rem;
+}
+
+.main__heading .launching {
+ color: var(--gray);
+}
+
+.main__subscribe {
+ font-size: 0.6rem;
+ font-weight: 700;
+ opacity: 0.8;
+}
+
+form {
+ margin: 1.5rem auto 2.5rem;
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+ width: 85%;
+ max-width: 225px;
+}
+
+form input {
+ border-radius: 25px;
+ padding: 0.5rem 1rem;
+ font-size: 0.6rem;
+}
+
+form .email {
+ color: var(--pale-blue);
+ opacity: 0.5;
+ border: 1px solid var(--pale-blue);
+}
+
+form .email:invalid {
+ border: none;
+ outline: 0.5px solid var(--light-red);
+ position: relative;
+}
+
+form .button {
+ background-color: var(--blue);
+ color: var(--white);
+ border: none;
+ box-shadow: 1px 1.5px 5px var(--gray);
+}
+
+form .button:hover {
+ opacity: 0.9;
+ box-shadow: none;
+}
+
+figure img {
+  width: 85%;
+}
+
+figure figcaption {
+ display: none;
+}
+
+.footer .social {
+ display: flex;
+ justify-content: center;
+ gap: 1.5rem;
+ font-size: 0.7rem;
+ color: var(--blue);
+ margin: 5rem auto 1.6rem;
+}
+
+.footer .copyright {
+ font-size: 0.5rem;
+ opacity: 0.9;
+}
+
+.footer .attribution {
+ margin-top: 1rem;
+}
+
+
+@media screen and (min-width: 375px) {
+ body {
+  max-width: 260px;
+ }
+
+ form input {
+  padding: 0.55rem 1rem;
+  font-size: 0.6rem;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
+ body {
+  max-width: 450px;
+ }
+
+.main {
+ line-height: 2;
+}
+
+ form {
+  flex-direction: row;
+  gap: 0.4rem;
+  width: unset;
+ }
+
+ form input {
+  font-size: 0.5rem;
+  letter-spacing: 0.03rem;
+ }
+
+ form .email {
+  padding: 0.5rem 7rem 0.5rem 0.75rem;
+  margin-left: -3.5rem;
+ }
+
+ .button {
+  padding-right: 2.35rem;
+  padding-left: 2.35rem;
+ }
+
+ figure img {
+   width: 75%;
+ }
+
+ .footer .social {
+  margin: 2rem auto 1.6rem;
+  }
+  
+}
+
+/* frontendmentor.io Attribution */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
