@@ -38,5 +38,5 @@ Users should be able to:
 
 - Website - [Max Ralph](https://www.max-ralph.com)
 - Frontend Mentor - [@maxralph002](https://www.frontendmentor.io/profile/maxralph002)
-- Twitter - [@maxralph002](https://www.twitter.com/maxralph002)
+- Twitter - [@jsuis_maxralph](https://www.twitter.com/jsuis_maxralph)
 
